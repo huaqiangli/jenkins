@@ -1,0 +1,65 @@
+Started by user [8mha:////4GV+RweLVc60jNuiJH+RLYoYLLHXQr/3JPSKsYbJxLpOAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYB/dLi1CL9nMyM0sTCTKBJAIE8yCbFAAAA[0mHuaqiang Li (李华强)
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4L9Lu6/asWDoJpb+R7DxX2Ov8+GrK4FEOILfKSRJOpEyAAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYp/eT83ILSktQi/ay8nALd4pzEslRd07L03FwAFMPvhc8AAAA=[0mjnlp-slave-5vgmm (k8s-jnlp-slave) in workspace /home/jenkins/workspace/juc-demo-17
+Set build name.
+Unrecognized macro 'BUILD_USER' in '#14-${BUILD_USER}'
+[juc-demo-17] $ /bin/sh -xe /tmp/jenkins3962637589110954229.sh
++ sleep 10
++ id -a
+uid=10000(jenkins) gid=10000(jenkins) groups=10000(jenkins)
++ env
++ sort
+AGENT_WORKDIR=/home/jenkins/agent
+BUILD_CAUSE=MANUALTRIGGER
+BUILD_CAUSE_MANUALTRIGGER=true
+BUILD_DISPLAY_NAME=#14
+BUILD_ID=14
+BUILD_NUMBER=14
+BUILD_TAG=jenkins-juc-demo-17-14
+BUILD_URL=http://106.2.3.220:8080/job/juc-demo-17/14/
+BUILD_USER=Huaqiang Li (李华强)
+BUILD_USER_EMAIL=lihuaqiang@greatops.net
+BUILD_USER_FIRST_NAME=Huaqiang
+BUILD_USER_ID=lihuaqiang
+BUILD_USER_LAST_NAME=Li
+CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
+EXECUTOR_NUMBER=0
+HOME=/home/jenkins
+HOSTNAME=jnlp-slave-5vgmm
+HUDSON_COOKIE=5a5e4325-d16e-49c5-8f39-d1343734957e
+HUDSON_HOME=/var/jenkins_home
+HUDSON_SERVER_COOKIE=85059fa3dd0b75b8
+HUDSON_URL=http://106.2.3.220:8080/
+JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1
+JAVA_VERSION=8u151
+JENKINS_HOME=/var/jenkins_home
+JENKINS_NAME=jnlp-slave-5vgmm
+JENKINS_SECRET=c86510728df1c6120f8a8f3b1f8cf8471a86dfe080e535722a8ac587b5f48c8f
+JENKINS_SERVER_COOKIE=85059fa3dd0b75b8
+JENKINS_URL=http://106.2.3.220:8080/
+JOB_BASE_NAME=juc-demo-17
+JOB_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-17/display/redirect
+JOB_NAME=juc-demo-17
+JOB_URL=http://106.2.3.220:8080/job/juc-demo-17/
+KUBERNETES_PORT=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP_ADDR=10.96.0.1
+KUBERNETES_PORT_443_TCP_PORT=443
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+KUBERNETES_SERVICE_HOST=10.96.0.1
+KUBERNETES_SERVICE_PORT=443
+KUBERNETES_SERVICE_PORT_HTTPS=443
+LANG=C.UTF-8
+NODE_LABELS=jnlp-slave-5vgmm k8s-jnlp-slave
+NODE_NAME=jnlp-slave-5vgmm
+PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/home/jenkins/workspace/juc-demo-17
+ROOT_BUILD_CAUSE=MANUALTRIGGER
+ROOT_BUILD_CAUSE_MANUALTRIGGER=true
+RUN_CHANGES_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-17/14/display/redirect?page=changes
+RUN_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-17/14/display/redirect
+TERM=xterm
+WORKSPACE=/home/jenkins/workspace/juc-demo-17
+Set build name.
+New build name is '#14-Huaqiang Li (李华强)'
+Finished: SUCCESS

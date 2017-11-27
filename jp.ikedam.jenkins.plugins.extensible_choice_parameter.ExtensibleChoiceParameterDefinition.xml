@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jp.ikedam.jenkins.plugins.extensible__choice__parameter.ExtensibleChoiceParameterDefinition_-DescriptorImpl plugin="extensible-choice-parameter@1.4.1">
+  <choiceListEnabledMap>
+    <entry>
+      <string>jp.ikedam.jenkins.plugins.extensible_choice_parameter.TextareaChoiceListProvider</string>
+      <boolean>true</boolean>
+    </entry>
+    <entry>
+      <string>jp.ikedam.jenkins.plugins.extensible_choice_parameter.FilenameChoiceListProvider</string>
+      <boolean>true</boolean>
+    </entry>
+    <entry>
+      <string>jp.ikedam.jenkins.plugins.extensible_choice_parameter.GlobalTextareaChoiceListProvider</string>
+      <boolean>true</boolean>
+    </entry>
+    <entry>
+      <string>jp.ikedam.jenkins.plugins.extensible_choice_parameter.SystemGroovyChoiceListProvider</string>
+      <boolean>true</boolean>
+    </entry>
+  </choiceListEnabledMap>
+</jp.ikedam.jenkins.plugins.extensible__choice__parameter.ExtensibleChoiceParameterDefinition_-DescriptorImpl>

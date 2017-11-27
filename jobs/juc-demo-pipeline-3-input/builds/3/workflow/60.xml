@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.16">
+  <node class="org.jenkinsci.plugins.workflow.cps.nodes.StepAtomNode" plugin="workflow-cps@2.41">
+    <parentIds>
+      <string>59</string>
+    </parentIds>
+    <id>60</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.input.InputStep</descriptorId>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+      <charset>UTF-8</charset>
+    </org.jenkinsci.plugins.workflow.support.actions.LogActionImpl>
+    <org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl plugin="workflow-cps@2.41">
+      <arguments class="linked-hash-map">
+        <entry>
+          <string>message</string>
+          <string>请选择发布类型：</string>
+        </entry>
+        <entry>
+          <string>ok</string>
+          <string>Release!</string>
+        </entry>
+        <entry>
+          <string>parameters</string>
+          <list>
+            <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable plugin="structs@1.10">
+              <symbol>choice</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>RELEASE_SCOPE</string>
+                </entry>
+                <entry>
+                  <string>choices</string>
+                  <string>开发环境
+测试环境
+生产环境</string>
+                </entry>
+                <entry>
+                  <string>description</string>
+                  <string>请选择此次发布的类型。</string>
+                </entry>
+              </arguments>
+            </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl>
+    <org.jenkinsci.plugins.workflow.support.actions.PauseAction>
+      <cause>Input</cause>
+      <startTime>1510853288474</startTime>
+      <endTime>1510853296255</endTime>
+    </org.jenkinsci.plugins.workflow.support.actions.PauseAction>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@2.23.1">
+      <startTime>1510853288487</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+    <org.jenkinsci.plugins.workflow.support.steps.input.InputSubmittedAction plugin="pipeline-input-step@2.8">
+      <parameters class="linked-hash-map">
+        <entry>
+          <string>RELEASE_SCOPE</string>
+          <string>生产环境</string>
+        </entry>
+      </parameters>
+      <approver>root</approver>
+    </org.jenkinsci.plugins.workflow.support.steps.input.InputSubmittedAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

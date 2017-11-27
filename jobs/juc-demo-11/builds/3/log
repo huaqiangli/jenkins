@@ -1,0 +1,60 @@
+Started by user [8mha:////4GV+RweLVc60jNuiJH+RLYoYLLHXQr/3JPSKsYbJxLpOAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYB/dLi1CL9nMyM0sTCTKBJAIE8yCbFAAAA[0mHuaqiang Li (李华强)
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MJxU6KVAXAsnQ/1AkC+7ZLImMiL+tyCt+FIXuOzIjJJAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQi/dxK3eSc/NIU3TyggwGRY6erzAAAAA==[0mmy-cloud-node (centos7) in workspace /root/data/jenkins_slave/workspace/juc-demo-11
+Set build name.
+Unrecognized macro 'BUILD_USER' in '#3-${BUILD_USER}'
+[juc-demo-11] $ /bin/sh -xe /tmp/jenkins1771741823450101065.sh
++ env
++ sort
+_=/bin/env
+BUILD_CAUSE=MANUALTRIGGER
+BUILD_CAUSE_MANUALTRIGGER=true
+BUILD_DISPLAY_NAME=#3
+BUILD_ID=3
+BUILD_NUMBER=3
+BUILD_TAG=jenkins-juc-demo-11-3
+BUILD_URL=http://106.2.3.220:8080/job/juc-demo-11/3/
+BUILD_USER_EMAIL=lihuaqiang@greatops.net
+BUILD_USER_FIRST_NAME=Huaqiang
+BUILD_USER=Huaqiang Li (李华强)
+BUILD_USER_ID=lihuaqiang
+BUILD_USER_LAST_NAME=Li
+EXECUTOR_NUMBER=1
+HOME=/root
+HUDSON_COOKIE=cc14b0c0-d664-412b-8625-c05a5176e4f6
+HUDSON_HOME=/var/jenkins_home
+HUDSON_SERVER_COOKIE=85059fa3dd0b75b8
+HUDSON_URL=http://106.2.3.220:8080/
+JENKINS_HOME=/var/jenkins_home
+JENKINS_SERVER_COOKIE=85059fa3dd0b75b8
+JENKINS_URL=http://106.2.3.220:8080/
+JOB_BASE_NAME=juc-demo-11
+JOB_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-11/display/redirect
+JOB_NAME=juc-demo-11
+JOB_URL=http://106.2.3.220:8080/job/juc-demo-11/
+LANG=en_US.UTF-8
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LOGNAME=root
+MAIL=/var/mail/root
+NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+NODE_LABELS=centos7 my-cloud-node
+NODE_NAME=my-cloud-node
+PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+PWD=/root/data/jenkins_slave/workspace/juc-demo-11
+ROOT_BUILD_CAUSE=MANUALTRIGGER
+ROOT_BUILD_CAUSE_MANUALTRIGGER=true
+RUN_CHANGES_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-11/3/display/redirect?page=changes
+RUN_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-11/3/display/redirect
+SHELL=/bin/bash
+SHLVL=2
+SSH_CLIENT=172.19.0.3 60185 8022
+SSH_CONNECTION=172.19.0.3 60185 106.2.3.220 8022
+USER=root
+WORKSPACE=/root/data/jenkins_slave/workspace/juc-demo-11
+XDG_RUNTIME_DIR=/run/user/0
+XDG_SESSION_ID=344
+XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
++ sleep 60
+Set build name.
+New build name is '#3-Huaqiang Li (李华强)'
+Finished: SUCCESS

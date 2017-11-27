@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: michaelneale
+Build-Jdk: 1.8.0_05
+Extension-Name: simple-build-for-pipeline
+Specification-Title: This plugin provides a build DSL that should be f
+ amiliar to people used to things like travisci. It is declarative
+         and takes care of common tasks. It works well with pipeline-a
+ s-code and docker.
+Implementation-Title: simple-build-for-pipeline
+Implementation-Version: 0.2
+Group-Id: org.jenkins-ci.plugins
+Short-Name: simple-build-for-pipeline
+Long-Name: Simple Build DSL for Pipeline
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Build+For+Pipe
+ line+Plugin
+Plugin-Version: 0.2
+Hudson-Version: 1.609.3
+Jenkins-Version: 1.609.3
+Plugin-Dependencies: workflow-aggregator:1.13,workflow-cps:1.13,script
+ -security:1.15,docker-workflow:1.2
+Plugin-Developers: Michael Neale:mneale:mneale@cloudbees.com
+

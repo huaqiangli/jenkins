@@ -1,0 +1,54 @@
+Started by user [8mha:////4GV+RweLVc60jNuiJH+RLYoYLLHXQr/3JPSKsYbJxLpOAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYB/dLi1CL9nMyM0sTCTKBJAIE8yCbFAAAA[0mHuaqiang Li (李华强)
+Building remotely on [8mha:////4MJxU6KVAXAsnQ/1AkC+7ZLImMiL+tyCt+FIXuOzIjJJAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQi/dxK3eSc/NIU3TyggwGRY6erzAAAAA==[0mmy-cloud-node (centos7) in workspace /root/data/jenkins_slave/workspace/juc-demo-3
+Set build name.
+Unrecognized macro 'BUILD_USER' in '#4-${BUILD_USER}'
+[juc-demo-3] $ /bin/sh -xe /tmp/jenkins1483635321040655528.sh
++ env
++ sort
+_=/bin/env
+BUILD_DISPLAY_NAME=#4
+BUILD_ID=4
+BUILD_NUMBER=4
+BUILD_TAG=jenkins-juc-demo-3-4
+BUILD_URL=http://106.2.3.220:8080/job/juc-demo-3/4/
+BUILD_USER_EMAIL=lihuaqiang@greatops.net
+BUILD_USER_FIRST_NAME=Huaqiang
+BUILD_USER=Huaqiang Li (李华强)
+BUILD_USER_ID=lihuaqiang
+BUILD_USER_LAST_NAME=Li
+EXECUTOR_NUMBER=1
+HOME=/root
+HUDSON_COOKIE=dd60ac85-5c6b-44a8-89b0-f5c8e0455a6b
+HUDSON_HOME=/var/jenkins_home
+HUDSON_SERVER_COOKIE=85059fa3dd0b75b8
+HUDSON_URL=http://106.2.3.220:8080/
+JENKINS_HOME=/var/jenkins_home
+JENKINS_SERVER_COOKIE=85059fa3dd0b75b8
+JENKINS_URL=http://106.2.3.220:8080/
+JOB_BASE_NAME=juc-demo-3
+JOB_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-3/display/redirect
+JOB_NAME=juc-demo-3
+JOB_URL=http://106.2.3.220:8080/job/juc-demo-3/
+LANG=en_US.UTF-8
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LOGNAME=root
+MAIL=/var/mail/root
+NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+NODE_LABELS=centos7 my-cloud-node
+NODE_NAME=my-cloud-node
+PATH=/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+PWD=/root/data/jenkins_slave/workspace/juc-demo-3
+RUN_CHANGES_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-3/4/display/redirect?page=changes
+RUN_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-3/4/display/redirect
+SHELL=/bin/bash
+SHLVL=2
+SSH_CLIENT=172.19.0.3 58615 8022
+SSH_CONNECTION=172.19.0.3 58615 106.2.3.220 8022
+USER=root
+WORKSPACE=/root/data/jenkins_slave/workspace/juc-demo-3
+XDG_RUNTIME_DIR=/run/user/0
+XDG_SESSION_ID=337
+XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+Set build name.
+New build name is '#4-Huaqiang Li (李华强)'
+Finished: SUCCESS

@@ -1,0 +1,56 @@
+Started by user [8mha:////4GV+RweLVc60jNuiJH+RLYoYLLHXQr/3JPSKsYbJxLpOAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYB/dLi1CL9nMyM0sTCTKBJAIE8yCbFAAAA[0mHuaqiang Li (李华强)
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4NzDyiYEurWeDUmpDckFX8mibBw+KCVlDxgiXnIxGwj1AAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZ5/eT83ILSktQi/dxK3eSc/NIUXXNjS0szgzQDo7SkNADIEsYj1AAAAA==[0mmy-cloud-739960f02fbf (docker-jnlp-slave) in workspace /home/jenkins/workspace/juc-demo-16-2
+Set build name.
+Unrecognized macro 'BUILD_USER' in '#3-${BUILD_USER}'
+[juc-demo-16-2] $ /bin/sh -xe /tmp/jenkins5943241931453402148.sh
++ id -a
+uid=10000(jenkins) gid=10000(jenkins) groups=10000(jenkins)
++ env
++ sort
+AGENT_WORKDIR=/home/jenkins/agent
+BUILD_CAUSE=MANUALTRIGGER
+BUILD_CAUSE_MANUALTRIGGER=true
+BUILD_DISPLAY_NAME=#3
+BUILD_ID=3
+BUILD_NUMBER=3
+BUILD_TAG=jenkins-juc-demo-16-2-3
+BUILD_URL=http://106.2.3.220:8080/job/juc-demo-16-2/3/
+BUILD_USER=Huaqiang Li (李华强)
+BUILD_USER_EMAIL=lihuaqiang@greatops.net
+BUILD_USER_FIRST_NAME=Huaqiang
+BUILD_USER_ID=lihuaqiang
+BUILD_USER_LAST_NAME=Li
+CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
+DOCKER_CONTAINER_ID=739960f02fbf5a7c56bef53ad059094c180e27982b512d4362c6ecaefc8a1a36
+EXECUTOR_NUMBER=0
+HOME=/home/jenkins
+HOSTNAME=739960f02fbf
+HUDSON_COOKIE=ec14acbe-a8bf-4ed0-85c4-fada5c2744f9
+HUDSON_HOME=/var/jenkins_home
+HUDSON_SERVER_COOKIE=85059fa3dd0b75b8
+HUDSON_URL=http://106.2.3.220:8080/
+JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1
+JAVA_VERSION=8u141
+JENKINS_CLOUD_ID=my-cloud
+JENKINS_HOME=/var/jenkins_home
+JENKINS_SERVER_COOKIE=85059fa3dd0b75b8
+JENKINS_URL=http://106.2.3.220:8080/
+JOB_BASE_NAME=juc-demo-16-2
+JOB_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-16-2/display/redirect
+JOB_NAME=juc-demo-16-2
+JOB_URL=http://106.2.3.220:8080/job/juc-demo-16-2/
+LANG=C.UTF-8
+NODE_LABELS=docker-jnlp-slave my-cloud-739960f02fbf
+NODE_NAME=my-cloud-739960f02fbf
+PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/home/jenkins/workspace/juc-demo-16-2
+ROOT_BUILD_CAUSE=MANUALTRIGGER
+ROOT_BUILD_CAUSE_MANUALTRIGGER=true
+RUN_CHANGES_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-16-2/3/display/redirect?page=changes
+RUN_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-16-2/3/display/redirect
+TERM=xterm
+WORKSPACE=/home/jenkins/workspace/juc-demo-16-2
+Set build name.
+New build name is '#3-Huaqiang Li (李华强)'
+Finished: SUCCESS

@@ -1,0 +1,56 @@
+Started at Thu Nov 16 18:31:51 UTC 2017
+Checking juc-demo-1
+Checking juc-demo-10
+Checking juc-demo-11
+Checking juc-demo-12
+Checking juc-demo-13-1
+Checking juc-demo-13-2
+Checking juc-demo-13-3
+Checking juc-demo-13-4
+Checking juc-demo-15
+Checking juc-demo-16-1
+Checking juc-demo-16-2
+Checking juc-demo-17
+Checking juc-demo-2
+Checking juc-demo-3
+Checking juc-demo-4
+Checking juc-demo-5
+Checking juc-demo-6
+Checking juc-demo-7
+Checking juc-demo-8
+Checking juc-demo-9
+Checking juc-demo-pipeline-1-simple
+Checking juc-demo-pipeline-2-normal
+Checking juc-demo-pipeline-3-input
+Checking juc-demo-pipeline-4
+Checking juc-demo-pipeline-5
+Checking juc-demo-pipeline-6-freestyle
+Finished at Thu Nov 16 18:31:51 UTC 2017. 178ms
+Started at Fri Nov 17 18:31:51 UTC 2017
+Checking juc-demo-1
+Checking juc-demo-10
+Checking juc-demo-11
+Checking juc-demo-12
+Checking juc-demo-13-1
+Checking juc-demo-13-2
+Checking juc-demo-13-3
+Checking juc-demo-13-4
+Checking juc-demo-15
+Checking juc-demo-16-1
+Checking juc-demo-16-2
+Checking juc-demo-17
+Checking juc-demo-2
+Checking juc-demo-3
+Checking juc-demo-4
+Checking juc-demo-5
+Checking juc-demo-6
+Checking juc-demo-7
+Checking juc-demo-8
+Checking juc-demo-9
+Checking juc-demo-pipeline-1-simple
+Checking juc-demo-pipeline-2-normal
+Checking juc-demo-pipeline-3-input
+Checking juc-demo-pipeline-4-sonar
+Checking juc-demo-pipeline-5
+Checking juc-demo-pipeline-6-freestyle
+Finished at Fri Nov 17 18:31:52 UTC 2017. 383ms

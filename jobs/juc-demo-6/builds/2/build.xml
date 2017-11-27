@@ -1,0 +1,741 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>lihuaqiang</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.jobConfigHistory.JobConfigBadgeAction plugin="jobConfigHistory@2.14">
+      <configDates>
+        <string>2017-11-08_10-56-08</string>
+        <string>2017-11-08_10-50-31</string>
+      </configDates>
+    </hudson.plugins.jobConfigHistory.JobConfigBadgeAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@3.1.2.9">
+      <queuingDurationMillis>4</queuingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction plugin="blueocean-rest-impl@1.1.2">
+      <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+        <mappedUrl>blue/organizations/jenkins/juc-demo-6/detail/juc-demo-6/2</mappedUrl>
+      </blueOceanUrlObject>
+    </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+    <org.jvnet.hudson.plugins.DownstreamBuildViewAction plugin="downstream-buildview@1.9"/>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1"/>
+    <org.jenkinsci.plugins.EnvironmentVarSetter plugin="build-name-setter@1.6.5">
+      <log>
+        <autoFlush>false</autoFlush>
+        <trouble>false</trouble>
+        <closing>true</closing>
+      </log>
+      <envVars>
+        <entry>
+          <string>BUILD_DISPLAY_NAME</string>
+          <string>#2-Huaqiang Li (李华强)</string>
+        </entry>
+      </envVars>
+    </org.jenkinsci.plugins.EnvironmentVarSetter>
+    <com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseBuildAction plugin="build-failure-analyzer@1.16.0">
+      <foundFailureCauses class="java.util.Collections$SynchronizedList" serialization="custom">
+        <java.util.Collections_-SynchronizedCollection>
+          <default>
+            <c class="linked-list"/>
+            <mutex class="java.util.Collections$SynchronizedList" reference="../../.."/>
+          </default>
+        </java.util.Collections_-SynchronizedCollection>
+        <java.util.Collections_-SynchronizedList>
+          <default>
+            <list class="linked-list" reference="../../../java.util.Collections_-SynchronizedCollection/default/c"/>
+          </default>
+        </java.util.Collections_-SynchronizedList>
+      </foundFailureCauses>
+      <build class="build" reference="../../.."/>
+    </com.sonyericsson.jenkins.plugins.bfa.model.FailureCauseBuildAction>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.25"/>
+    <org.jenkinsci.plugins.buildenvironment.actions.BuildEnvironmentBuildAction plugin="build-environment@1.6">
+      <build class="build" reference="../../.."/>
+      <build1 class="build" reference="../../.."/>
+      <build2 class="build" reference="../../.."/>
+      <diffOption>false</diffOption>
+      <dataHolders>
+        <org.jenkinsci.plugins.buildenvironment.data.EnvVarsData>
+          <name>Environment Variables</name>
+          <id>envVar</id>
+          <data>
+            <entry>
+              <string>ARMCOMPILER6_ASMOPT</string>
+              <string>--tool_variant=ult</string>
+            </entry>
+            <entry>
+              <string>ARMCOMPILER6_CLANGOPT</string>
+              <string>--tool_variant=ult</string>
+            </entry>
+            <entry>
+              <string>ARMCOMPILER6_FROMELFOPT</string>
+              <string>--tool_variant=ult</string>
+            </entry>
+            <entry>
+              <string>ARMCOMPILER6_LINKOPT</string>
+              <string>--tool_variant=ult</string>
+            </entry>
+            <entry>
+              <string>ARMLMD_LICENSE_FILE</string>
+              <string>8226@arm.devops.letv.com</string>
+            </entry>
+            <entry>
+              <string>AUTOBUILD_MYSQL_USER</string>
+              <string>LeEco</string>
+            </entry>
+            <entry>
+              <string>BUILD_CAUSE</string>
+              <string>MANUALTRIGGER</string>
+            </entry>
+            <entry>
+              <string>BUILD_CAUSE_MANUALTRIGGER</string>
+              <string>true</string>
+            </entry>
+            <entry>
+              <string>BUILD_DISPLAY_NAME</string>
+              <string>#2-Huaqiang Li (李华强)</string>
+            </entry>
+            <entry>
+              <string>BUILD_ID</string>
+              <string>2</string>
+            </entry>
+            <entry>
+              <string>BUILD_NUMBER</string>
+              <string>2</string>
+            </entry>
+            <entry>
+              <string>BUILD_TAG</string>
+              <string>jenkins-juc-demo-6-2</string>
+            </entry>
+            <entry>
+              <string>BUILD_URL</string>
+              <string>http://jenkins-test.devops.letv.com/job/juc-demo-6/2/</string>
+            </entry>
+            <entry>
+              <string>BUILD_USER</string>
+              <string>Huaqiang Li (李华强)</string>
+            </entry>
+            <entry>
+              <string>BUILD_USER_EMAIL</string>
+              <string>lihuaqiang@le.com</string>
+            </entry>
+            <entry>
+              <string>BUILD_USER_FIRST_NAME</string>
+              <string>Huaqiang</string>
+            </entry>
+            <entry>
+              <string>BUILD_USER_ID</string>
+              <string>lihuaqiang</string>
+            </entry>
+            <entry>
+              <string>BUILD_USER_LAST_NAME</string>
+              <string>Li</string>
+            </entry>
+            <entry>
+              <string>CIB_S_AUTO_ANDROID_BRANCH</string>
+              <string>r2.0</string>
+            </entry>
+            <entry>
+              <string>CIB_S_AUTO_ANDROID_URL</string>
+              <string>athenar:/tools/ci/build_script</string>
+            </entry>
+            <entry>
+              <string>CIB_S_RELEASE_TOOL</string>
+              <string>letv@imgrepo-cnbj.devops.letv.com:/home/letv/ci_share/build_script/get_ci_scripts.sh</string>
+            </entry>
+            <entry>
+              <string>CIB_S_TMP_FOLDER_FOR_CLEAN</string>
+              <string>/home/letv/jenkins_slave/workspace/CI_TMP_FOR_CLEAN_BIG_FILE</string>
+            </entry>
+            <entry>
+              <string>CIB_S_TMP_FOLDER_FOR_RSYNC_DEBUG_FILE</string>
+              <string>/home/letv/jenkins_slave/workspace/CI_TMP_FOLDER_FOR_RSYNC_DEBUG_FILE</string>
+            </entry>
+            <entry>
+              <string>CLASSPATH</string>
+              <string></string>
+            </entry>
+            <entry>
+              <string>EXECUTOR_NUMBER</string>
+              <string>1</string>
+            </entry>
+            <entry>
+              <string>HOME</string>
+              <string>/home/letv</string>
+            </entry>
+            <entry>
+              <string>HUDSON_HOME</string>
+              <string>/var/lib/jenkins</string>
+            </entry>
+            <entry>
+              <string>HUDSON_SERVER_COOKIE</string>
+              <string>01676d1632886ea7</string>
+            </entry>
+            <entry>
+              <string>HUDSON_URL</string>
+              <string>http://jenkins-test.devops.letv.com/</string>
+            </entry>
+            <entry>
+              <string>JENKINS_HOME</string>
+              <string>/var/lib/jenkins</string>
+            </entry>
+            <entry>
+              <string>JENKINS_SERVER_COOKIE</string>
+              <string>01676d1632886ea7</string>
+            </entry>
+            <entry>
+              <string>JENKINS_URL</string>
+              <string>http://jenkins-test.devops.letv.com/</string>
+            </entry>
+            <entry>
+              <string>JOB_BASE_NAME</string>
+              <string>juc-demo-6</string>
+            </entry>
+            <entry>
+              <string>JOB_DISPLAY_URL</string>
+              <string>http://jenkins-test.devops.letv.com/job/juc-demo-6/display/redirect</string>
+            </entry>
+            <entry>
+              <string>JOB_NAME</string>
+              <string>juc-demo-6</string>
+            </entry>
+            <entry>
+              <string>JOB_URL</string>
+              <string>http://jenkins-test.devops.letv.com/job/juc-demo-6/</string>
+            </entry>
+            <entry>
+              <string>LANG</string>
+              <string>en_US.UTF-8</string>
+            </entry>
+            <entry>
+              <string>LANGUAGE</string>
+              <string>en_US:en</string>
+            </entry>
+            <entry>
+              <string>LOGNAME</string>
+              <string>letv</string>
+            </entry>
+            <entry>
+              <string>MAIL</string>
+              <string>/var/mail/letv</string>
+            </entry>
+            <entry>
+              <string>NODE_LABELS</string>
+              <string>ssh-slave-1 ubuntu1404</string>
+            </entry>
+            <entry>
+              <string>NODE_NAME</string>
+              <string>ssh-slave-1</string>
+            </entry>
+            <entry>
+              <string>OLDPWD</string>
+              <string>/home/letv</string>
+            </entry>
+            <entry>
+              <string>PATH</string>
+              <string>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games</string>
+            </entry>
+            <entry>
+              <string>PWD</string>
+              <string>/home/letv/jenkins_slave</string>
+            </entry>
+            <entry>
+              <string>ROOT_BUILD_CAUSE</string>
+              <string>MANUALTRIGGER</string>
+            </entry>
+            <entry>
+              <string>ROOT_BUILD_CAUSE_MANUALTRIGGER</string>
+              <string>true</string>
+            </entry>
+            <entry>
+              <string>RUN_CHANGES_DISPLAY_URL</string>
+              <string>http://jenkins-test.devops.letv.com/job/juc-demo-6/2/display/redirect?page=changes</string>
+            </entry>
+            <entry>
+              <string>RUN_DISPLAY_URL</string>
+              <string>http://jenkins-test.devops.letv.com/job/juc-demo-6/2/display/redirect</string>
+            </entry>
+            <entry>
+              <string>SG_MYSQL_TABLE_INFO</string>
+              <string>-hci.le.com -ucm_mis --database android_build -pLe_ciadmin</string>
+            </entry>
+            <entry>
+              <string>SHELL</string>
+              <string>/bin/bash</string>
+            </entry>
+            <entry>
+              <string>SHLVL</string>
+              <string>1</string>
+            </entry>
+            <entry>
+              <string>SSH_CLIENT</string>
+              <string>10.127.91.56 52908 22</string>
+            </entry>
+            <entry>
+              <string>SSH_CONNECTION</string>
+              <string>10.127.91.56 52908 10.127.91.58 22</string>
+            </entry>
+            <entry>
+              <string>USER</string>
+              <string>letv</string>
+            </entry>
+            <entry>
+              <string>WORKSPACE</string>
+              <string>/home/letv/jenkins_slave/workspace/juc-demo-6</string>
+            </entry>
+            <entry>
+              <string>XDG_RUNTIME_DIR</string>
+              <string>/run/user/1002</string>
+            </entry>
+            <entry>
+              <string>XDG_SESSION_ID</string>
+              <string>11</string>
+            </entry>
+            <entry>
+              <string>_</string>
+              <string>/usr/bin/java</string>
+            </entry>
+          </data>
+        </org.jenkinsci.plugins.buildenvironment.data.EnvVarsData>
+        <org.jenkinsci.plugins.buildenvironment.data.SlaveData>
+          <name>Slave Information</name>
+          <id>slaveInfo</id>
+          <data>
+            <entry>
+              <string>Busy executors</string>
+              <string>1</string>
+            </entry>
+            <entry>
+              <string>Computer Heap dump</string>
+              <string>hudson.util.RemotingDiagnostics$HeapDump@64dca19b</string>
+            </entry>
+            <entry>
+              <string>Computer connect time</string>
+              <string>1510041549516</string>
+            </entry>
+            <entry>
+              <string>Computer retention strategy</string>
+              <string>hudson.slaves.RetentionStrategy$Always@379d1a06</string>
+            </entry>
+            <entry>
+              <string>Demand start in ms</string>
+              <string>9223372036854775807</string>
+            </entry>
+            <entry>
+              <string>HOME</string>
+              <string>/home/letv</string>
+            </entry>
+            <entry>
+              <string>Host name</string>
+              <string>172.16.61.1</string>
+            </entry>
+            <entry>
+              <string>Is accepting tasks</string>
+              <string>true</string>
+            </entry>
+            <entry>
+              <string>LANG</string>
+              <string>en_US.UTF-8</string>
+            </entry>
+            <entry>
+              <string>LANGUAGE</string>
+              <string>en_US:en</string>
+            </entry>
+            <entry>
+              <string>LOGNAME</string>
+              <string>letv</string>
+            </entry>
+            <entry>
+              <string>MAIL</string>
+              <string>/var/mail/letv</string>
+            </entry>
+            <entry>
+              <string>Node display name</string>
+              <string>ssh-slave-1</string>
+            </entry>
+            <entry>
+              <string>Node label</string>
+              <string>ubuntu1404</string>
+            </entry>
+            <entry>
+              <string>Node mode</string>
+              <string>NORMAL</string>
+            </entry>
+            <entry>
+              <string>Node name</string>
+              <string>ssh-slave-1</string>
+            </entry>
+            <entry>
+              <string>Node root path</string>
+              <string>/home/letv/jenkins_slave</string>
+            </entry>
+            <entry>
+              <string>Number of executors</string>
+              <string>2</string>
+            </entry>
+            <entry>
+              <string>OLDPWD</string>
+              <string>/home/letv</string>
+            </entry>
+            <entry>
+              <string>PATH</string>
+              <string>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games</string>
+            </entry>
+            <entry>
+              <string>PWD</string>
+              <string>/home/letv/jenkins_slave</string>
+            </entry>
+            <entry>
+              <string>SHELL</string>
+              <string>/bin/bash</string>
+            </entry>
+            <entry>
+              <string>SHLVL</string>
+              <string>1</string>
+            </entry>
+            <entry>
+              <string>SSH_CLIENT</string>
+              <string>10.127.91.56 52908 22</string>
+            </entry>
+            <entry>
+              <string>SSH_CONNECTION</string>
+              <string>10.127.91.56 52908 10.127.91.58 22</string>
+            </entry>
+            <entry>
+              <string>USER</string>
+              <string>letv</string>
+            </entry>
+            <entry>
+              <string>XDG_RUNTIME_DIR</string>
+              <string>/run/user/1002</string>
+            </entry>
+            <entry>
+              <string>XDG_SESSION_ID</string>
+              <string>11</string>
+            </entry>
+            <entry>
+              <string>_</string>
+              <string>/usr/bin/java</string>
+            </entry>
+            <entry>
+              <string>awt.toolkit</string>
+              <string>sun.awt.X11.XToolkit</string>
+            </entry>
+            <entry>
+              <string>file.encoding</string>
+              <string>UTF-8</string>
+            </entry>
+            <entry>
+              <string>file.encoding.pkg</string>
+              <string>sun.io</string>
+            </entry>
+            <entry>
+              <string>file.separator</string>
+              <string>/</string>
+            </entry>
+            <entry>
+              <string>idle executors</string>
+              <string>1</string>
+            </entry>
+            <entry>
+              <string>is Hold off launch until save</string>
+              <string>false</string>
+            </entry>
+            <entry>
+              <string>java.awt.graphicsenv</string>
+              <string>sun.awt.X11GraphicsEnvironment</string>
+            </entry>
+            <entry>
+              <string>java.awt.printerjob</string>
+              <string>sun.print.PSPrinterJob</string>
+            </entry>
+            <entry>
+              <string>java.class.path</string>
+              <string>slave.jar</string>
+            </entry>
+            <entry>
+              <string>java.class.version</string>
+              <string>51.0</string>
+            </entry>
+            <entry>
+              <string>java.endorsed.dirs</string>
+              <string>/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed</string>
+            </entry>
+            <entry>
+              <string>java.ext.dirs</string>
+              <string>/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext</string>
+            </entry>
+            <entry>
+              <string>java.home</string>
+              <string>/usr/lib/jvm/java-7-openjdk-amd64/jre</string>
+            </entry>
+            <entry>
+              <string>java.io.tmpdir</string>
+              <string>/tmp</string>
+            </entry>
+            <entry>
+              <string>java.library.path</string>
+              <string>/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib</string>
+            </entry>
+            <entry>
+              <string>java.runtime.name</string>
+              <string>OpenJDK Runtime Environment</string>
+            </entry>
+            <entry>
+              <string>java.runtime.version</string>
+              <string>1.7.0_131-b00</string>
+            </entry>
+            <entry>
+              <string>java.specification.name</string>
+              <string>Java Platform API Specification</string>
+            </entry>
+            <entry>
+              <string>java.specification.vendor</string>
+              <string>Oracle Corporation</string>
+            </entry>
+            <entry>
+              <string>java.specification.version</string>
+              <string>1.7</string>
+            </entry>
+            <entry>
+              <string>java.vendor</string>
+              <string>Oracle Corporation</string>
+            </entry>
+            <entry>
+              <string>java.vendor.url</string>
+              <string>http://java.oracle.com/</string>
+            </entry>
+            <entry>
+              <string>java.vendor.url.bug</string>
+              <string>http://bugreport.sun.com/bugreport/</string>
+            </entry>
+            <entry>
+              <string>java.version</string>
+              <string>1.7.0_131</string>
+            </entry>
+            <entry>
+              <string>java.vm.info</string>
+              <string>mixed mode</string>
+            </entry>
+            <entry>
+              <string>java.vm.name</string>
+              <string>OpenJDK 64-Bit Server VM</string>
+            </entry>
+            <entry>
+              <string>java.vm.specification.name</string>
+              <string>Java Virtual Machine Specification</string>
+            </entry>
+            <entry>
+              <string>java.vm.specification.vendor</string>
+              <string>Oracle Corporation</string>
+            </entry>
+            <entry>
+              <string>java.vm.specification.version</string>
+              <string>1.7</string>
+            </entry>
+            <entry>
+              <string>java.vm.vendor</string>
+              <string>Oracle Corporation</string>
+            </entry>
+            <entry>
+              <string>java.vm.version</string>
+              <string>24.131-b00</string>
+            </entry>
+            <entry>
+              <string>jna.loaded</string>
+              <string>true</string>
+            </entry>
+            <entry>
+              <string>jna.platform.library.path</string>
+              <string>/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/lib64:/usr/lib:/lib:/lib/i386-linux-gnu:/usr/lib/i386-linux-gnu:/libx32:/lib32:/usr/libx32:/usr/lib32:/usr/lib/x86_64-linux-gnu/libfakeroot:/usr/lib/x86_64-linux-gnu/mesa:/usr/lib/i386-linux-gnu/mesa</string>
+            </entry>
+            <entry>
+              <string>jnidispatch.path</string>
+              <string>/tmp/jna-3318203/jna618281142129726305.tmp</string>
+            </entry>
+            <entry>
+              <string>line.separator</string>
+              <string>
+</string>
+            </entry>
+            <entry>
+              <string>os.arch</string>
+              <string>amd64</string>
+            </entry>
+            <entry>
+              <string>os.name</string>
+              <string>Linux</string>
+            </entry>
+            <entry>
+              <string>os.version</string>
+              <string>3.19.0-25-generic</string>
+            </entry>
+            <entry>
+              <string>path.separator</string>
+              <string>:</string>
+            </entry>
+            <entry>
+              <string>pid</string>
+              <string>489</string>
+            </entry>
+            <entry>
+              <string>sun.arch.data.model</string>
+              <string>64</string>
+            </entry>
+            <entry>
+              <string>sun.boot.class.path</string>
+              <string>/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes</string>
+            </entry>
+            <entry>
+              <string>sun.boot.library.path</string>
+              <string>/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64</string>
+            </entry>
+            <entry>
+              <string>sun.cpu.endian</string>
+              <string>little</string>
+            </entry>
+            <entry>
+              <string>sun.cpu.isalist</string>
+              <string></string>
+            </entry>
+            <entry>
+              <string>sun.font.fontmanager</string>
+              <string>sun.awt.X11FontManager</string>
+            </entry>
+            <entry>
+              <string>sun.io.unicode.encoding</string>
+              <string>UnicodeLittle</string>
+            </entry>
+            <entry>
+              <string>sun.java.command</string>
+              <string>slave.jar</string>
+            </entry>
+            <entry>
+              <string>sun.java.launcher</string>
+              <string>SUN_STANDARD</string>
+            </entry>
+            <entry>
+              <string>sun.jnu.encoding</string>
+              <string>UTF-8</string>
+            </entry>
+            <entry>
+              <string>sun.management.compiler</string>
+              <string>HotSpot 64-Bit Tiered Compilers</string>
+            </entry>
+            <entry>
+              <string>sun.os.patch.level</string>
+              <string>unknown</string>
+            </entry>
+            <entry>
+              <string>user.country</string>
+              <string>US</string>
+            </entry>
+            <entry>
+              <string>user.dir</string>
+              <string>/letv/jenkins_slave</string>
+            </entry>
+            <entry>
+              <string>user.home</string>
+              <string>/home/letv</string>
+            </entry>
+            <entry>
+              <string>user.language</string>
+              <string>en</string>
+            </entry>
+            <entry>
+              <string>user.name</string>
+              <string>letv</string>
+            </entry>
+            <entry>
+              <string>user.timezone</string>
+              <string>Asia/Shanghai</string>
+            </entry>
+          </data>
+        </org.jenkinsci.plugins.buildenvironment.data.SlaveData>
+        <org.jenkinsci.plugins.buildenvironment.data.ProjectData>
+          <name>Project Information</name>
+          <id>projectInfo</id>
+          <data>
+            <entry>
+              <string>Abort permission</string>
+              <string>true</string>
+            </entry>
+            <entry>
+              <string>Block when downstream building</string>
+              <string>false</string>
+            </entry>
+            <entry>
+              <string>Block when upstream building</string>
+              <string>false</string>
+            </entry>
+            <entry>
+              <string>Is buildable</string>
+              <string>true</string>
+            </entry>
+            <entry>
+              <string>Is concurrent build</string>
+              <string>false</string>
+            </entry>
+            <entry>
+              <string>Is disabled</string>
+              <string>false</string>
+            </entry>
+            <entry>
+              <string>Is fingerprint configured</string>
+              <string>false</string>
+            </entry>
+            <entry>
+              <string>Is name editable</string>
+              <string>true</string>
+            </entry>
+            <entry>
+              <string>Is parameterized</string>
+              <string>false</string>
+            </entry>
+            <entry>
+              <string>Project name</string>
+              <string>juc-demo-6</string>
+            </entry>
+            <entry>
+              <string>Project url</string>
+              <string>job/juc-demo-6/</string>
+            </entry>
+            <entry>
+              <string>Quiet period</string>
+              <string>5</string>
+            </entry>
+            <entry>
+              <string>SCM</string>
+              <string>hudson.scm.NullSCM@6068528c</string>
+            </entry>
+            <entry>
+              <string>SCM type</string>
+              <string>hudson.scm.NullSCM</string>
+            </entry>
+          </data>
+        </org.jenkinsci.plugins.buildenvironment.data.ProjectData>
+      </dataHolders>
+    </org.jenkinsci.plugins.buildenvironment.actions.BuildEnvironmentBuildAction>
+  </actions>
+  <queueId>12</queueId>
+  <timestamp>1510109769839</timestamp>
+  <startTime>1510109769883</startTime>
+  <result>ABORTED</result>
+  <displayName>#2-Huaqiang Li (李华强)</displayName>
+  <duration>180232</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>ssh-slave-1</builtOn>
+  <workspace>/home/letv/jenkins_slave/workspace/juc-demo-6</workspace>
+  <hudsonVersion>2.46.2</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

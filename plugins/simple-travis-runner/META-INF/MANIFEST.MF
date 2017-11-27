@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: abayer
+Build-Jdk: 1.8.0
+Extension-Name: simple-travis-runner
+Specification-Title: This plugin provides a Pipeline step to read a .t
+ ravis.yml file and run it as a part of a Pipeline job.
+Implementation-Title: simple-travis-runner
+Implementation-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: simple-travis-runner
+Long-Name: Simple Travis Pipeline Runner Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Travis+Runner+
+ Plugin
+Plugin-Version: 1.0
+Hudson-Version: 1.609.3
+Jenkins-Version: 1.609.3
+Plugin-Dependencies: script-security:1.15,workflow-multibranch:1.13,wo
+ rkflow-aggregator:1.13,workflow-cps:1.13
+Plugin-Developers: Andrew Bayer:abayer:andrew.bayer@gmail.com
+

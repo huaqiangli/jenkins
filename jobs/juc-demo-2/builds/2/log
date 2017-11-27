@@ -1,0 +1,12 @@
+Started by user [8mha:////4M7Fkqa+uzO7UoXHgL7+Ea8M42B6bxjVxhvyvl4D1mrkAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYB/dLi1CL9nMyM0sTCTKBJAIE8yCbFAAAA[0mHuaqiang Li (李华强)
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4EfY5kA70K9EyQpXAkhVbvlu92iIV/kHPDjKofDbuphRAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/eLiDN3inMSyVF1DAGx4LbDKAAAA[0mssh-slave-1 (ubuntu1404) in workspace /home/letv/jenkins_slave/workspace/juc-demo-2
+[WS-CLEANUP] Deleting project workspace...
+[juc-demo-2] $ /bin/bash -xe /tmp/hudson4490681469134292879.sh
++ env
++ sort
++ ls -l
+total 4
+-rw-rw-r-- 1 letv letv 2167 Nov  7 17:41 env.log
+[WS-CLEANUP] Deleting project workspace...[WS-CLEANUP] done
+Finished: SUCCESS

@@ -1,0 +1,11 @@
+Started by user [8mha:////4Ffz/YzknF/K/12u3xe8fbhRiB7F2c0iFjXXt5pnpH6YAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL9ovz8EgDKVWzSvwAAAA==[0mroot
+Building remotely on [8mha:////4MJxU6KVAXAsnQ/1AkC+7ZLImMiL+tyCt+FIXuOzIjJJAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQi/dxK3eSc/NIU3TyggwGRY6erzAAAAA==[0mmy-cloud-node (centos7) in workspace /root/data/jenkins_slave/workspace/juc-demo-2
+[WS-CLEANUP] Deleting project workspace...
+[juc-demo-2] $ /bin/sh -xe /tmp/jenkins2047527084916940756.sh
++ env
++ sort
++ ls -l
+total 4
+-rw-r--r-- 1 root root 1325 Nov  9 16:08 env.log
+[WS-CLEANUP] Deleting project workspace...[WS-CLEANUP] done
+Finished: SUCCESS

@@ -1,0 +1,60 @@
+Started by user [8mha:////4M7Fkqa+uzO7UoXHgL7+Ea8M42B6bxjVxhvyvl4D1mrkAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYB/dLi1CL9nMyM0sTCTKBJAIE8yCbFAAAA[0mHuaqiang Li (李华强)
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4EfY5kA70K9EyQpXAkhVbvlu92iIV/kHPDjKofDbuphRAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/eLiDN3inMSyVF1DAGx4LbDKAAAA[0mssh-slave-1 (ubuntu1404) in workspace /home/letv/jenkins_slave/workspace/juc-demo-7
+[juc-demo-7] $ /bin/bash -xe /tmp/hudson808127920327286401.sh
++ env
++ sort
+ARMCOMPILER6_ASMOPT=--tool_variant=ult
+ARMCOMPILER6_CLANGOPT=--tool_variant=ult
+ARMCOMPILER6_FROMELFOPT=--tool_variant=ult
+ARMCOMPILER6_LINKOPT=--tool_variant=ult
+ARMLMD_LICENSE_FILE=8226@arm.devops.letv.com
+AUTOBUILD_MYSQL_USER=LeEco
+BUILD_CAUSE=MANUALTRIGGER
+BUILD_CAUSE_MANUALTRIGGER=true
+BUILD_DISPLAY_NAME=#1
+BUILD_ID=1
+BUILD_NUMBER=1
+BUILD_TAG=jenkins-juc-demo-7-1
+BUILD_URL=http://jenkins-test.devops.letv.com/job/juc-demo-7/1/
+CIB_S_AUTO_ANDROID_BRANCH=r2.0
+CIB_S_AUTO_ANDROID_URL=athenar:/tools/ci/build_script
+CIB_S_RELEASE_TOOL=letv@imgrepo-cnbj.devops.letv.com:/home/letv/ci_share/build_script/get_ci_scripts.sh
+CIB_S_TMP_FOLDER_FOR_CLEAN=/home/letv/jenkins_slave/workspace/CI_TMP_FOR_CLEAN_BIG_FILE
+CIB_S_TMP_FOLDER_FOR_RSYNC_DEBUG_FILE=/home/letv/jenkins_slave/workspace/CI_TMP_FOLDER_FOR_RSYNC_DEBUG_FILE
+EXECUTOR_NUMBER=1
+HOME=/home/letv
+HUDSON_COOKIE=ef01f042-88d5-4fb9-9a68-8c621e5d8454
+HUDSON_HOME=/var/lib/jenkins
+HUDSON_SERVER_COOKIE=01676d1632886ea7
+HUDSON_URL=http://jenkins-test.devops.letv.com/
+JENKINS_HOME=/var/lib/jenkins
+JENKINS_SERVER_COOKIE=01676d1632886ea7
+JENKINS_URL=http://jenkins-test.devops.letv.com/
+JOB_BASE_NAME=juc-demo-7
+JOB_DISPLAY_URL=http://jenkins-test.devops.letv.com/job/juc-demo-7/display/redirect
+JOB_NAME=juc-demo-7
+JOB_URL=http://jenkins-test.devops.letv.com/job/juc-demo-7/
+LANG=en_US.UTF-8
+LANGUAGE=en_US:en
+LOGNAME=letv
+MAIL=/var/mail/letv
+NODE_LABELS=ssh-slave-1 ubuntu1404
+NODE_NAME=ssh-slave-1
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+PWD=/letv/jenkins_slave/workspace/juc-demo-7
+ROOT_BUILD_CAUSE=MANUALTRIGGER
+ROOT_BUILD_CAUSE_MANUALTRIGGER=true
+RUN_CHANGES_DISPLAY_URL=http://jenkins-test.devops.letv.com/job/juc-demo-7/1/display/redirect?page=changes
+RUN_DISPLAY_URL=http://jenkins-test.devops.letv.com/job/juc-demo-7/1/display/redirect
+SG_MYSQL_TABLE_INFO=-hci.le.com -ucm_mis --database android_build -pLe_ciadmin
+SHELL=/bin/bash
+SHLVL=2
+SSH_CLIENT=10.127.91.56 52908 22
+SSH_CONNECTION=10.127.91.56 52908 10.127.91.58 22
+USER=letv
+_=/usr/bin/env
+WORKSPACE=/home/letv/jenkins_slave/workspace/juc-demo-7
+XDG_RUNTIME_DIR=/run/user/1002
+XDG_SESSION_ID=11
+Finished: SUCCESS

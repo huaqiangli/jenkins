@@ -1,0 +1,45 @@
+Started by user [8mha:////4Ffz/YzknF/K/12u3xe8fbhRiB7F2c0iFjXXt5pnpH6YAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL9ovz8EgDKVWzSvwAAAA==[0mroot
+Building remotely on [8mha:////4MJxU6KVAXAsnQ/1AkC+7ZLImMiL+tyCt+FIXuOzIjJJAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQi/dxK3eSc/NIU3TyggwGRY6erzAAAAA==[0mmy-cloud-node (centos7) in workspace /root/data/jenkins_slave/workspace/juc-demo-1
+[juc-demo-1] $ /bin/sh -xe /tmp/jenkins5763670831209420278.sh
++ env
++ sort
+_=/bin/env
+BUILD_DISPLAY_NAME=#3
+BUILD_ID=3
+BUILD_NUMBER=3
+BUILD_TAG=jenkins-juc-demo-1-3
+BUILD_URL=http://106.2.3.245:8080/job/juc-demo-1/3/
+EXECUTOR_NUMBER=0
+HOME=/root
+HUDSON_COOKIE=9f56844d-80a9-4de1-b323-4ce520239d30
+HUDSON_HOME=/var/jenkins_home
+HUDSON_SERVER_COOKIE=85059fa3dd0b75b8
+HUDSON_URL=http://106.2.3.245:8080/
+JENKINS_HOME=/var/jenkins_home
+JENKINS_SERVER_COOKIE=85059fa3dd0b75b8
+JENKINS_URL=http://106.2.3.245:8080/
+JOB_BASE_NAME=juc-demo-1
+JOB_DISPLAY_URL=http://106.2.3.245:8080/job/juc-demo-1/display/redirect
+JOB_NAME=juc-demo-1
+JOB_URL=http://106.2.3.245:8080/job/juc-demo-1/
+LANG=en_US.UTF-8
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LOGNAME=root
+MAIL=/var/mail/root
+NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+NODE_LABELS=centos7 my-cloud-node
+NODE_NAME=my-cloud-node
+PATH=/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+PWD=/root/data/jenkins_slave/workspace/juc-demo-1
+RUN_CHANGES_DISPLAY_URL=http://106.2.3.245:8080/job/juc-demo-1/3/display/redirect?page=changes
+RUN_DISPLAY_URL=http://106.2.3.245:8080/job/juc-demo-1/3/display/redirect
+SHELL=/bin/bash
+SHLVL=2
+SSH_CLIENT=172.19.0.3 55342 8022
+SSH_CONNECTION=172.19.0.3 55342 106.2.3.220 8022
+USER=root
+WORKSPACE=/root/data/jenkins_slave/workspace/juc-demo-1
+XDG_RUNTIME_DIR=/run/user/0
+XDG_SESSION_ID=324
+XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+Finished: SUCCESS

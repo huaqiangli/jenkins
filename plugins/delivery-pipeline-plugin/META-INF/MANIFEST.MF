@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: travis
+Build-Jdk: 1.8.0_144
+Extension-Name: delivery-pipeline-plugin
+Specification-Vendor: Diabol AB
+Implementation-Vendor: Diabol AB
+Implementation-Title: delivery-pipeline-plugin
+Implementation-Version: 1.0.7
+Group-Id: se.diabol.jenkins.pipeline
+Short-Name: delivery-pipeline-plugin
+Long-Name: Delivery Pipeline Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Delivery+Pipeline+Plu
+ gin
+Plugin-Version: 1.0.7
+Hudson-Version: 1.642.3
+Jenkins-Version: 1.642.3
+Plugin-Dependencies: pipeline-rest-api:2.5,promoted-builds:2.17;resolu
+ tion:=optional,workflow-aggregator:2.0,pipeline-stage-view:2.5,token-
+ macro:1.9,junit:1.19,jquery:1.7.2-1,parameterized-trigger:2.21,cloudb
+ ees-folder:5.7,git:2.2.10;resolution:=optional,dashboard-view:2.9.2;r
+ esolution:=optional,analysis-core:1.54;resolution:=optional,build-pip
+ eline-plugin:1.5.7.1;resolution:=optional
+Plugin-Developers: Patrik Bostrom:patbos:,Andreas Rehn:mrfatstrat:,Ric
+ kard von Essen:rickard_v_essen:,Tommy Tynjä:tommysdk:
+

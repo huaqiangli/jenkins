@@ -1,0 +1,51 @@
+ARMCOMPILER6_ASMOPT=--tool_variant=ult
+ARMCOMPILER6_CLANGOPT=--tool_variant=ult
+ARMCOMPILER6_FROMELFOPT=--tool_variant=ult
+ARMCOMPILER6_LINKOPT=--tool_variant=ult
+ARMLMD_LICENSE_FILE=8226@arm.devops.letv.com
+AUTOBUILD_MYSQL_USER=LeEco
+BUILD_CAUSE=MANUALTRIGGER
+BUILD_CAUSE_MANUALTRIGGER=true
+BUILD_DISPLAY_NAME=#2
+BUILD_ID=2
+BUILD_NUMBER=2
+BUILD_TAG=jenkins-juc-demo-6-2
+BUILD_URL=http://jenkins-test.devops.letv.com/job/juc-demo-6/2/
+CIB_S_AUTO_ANDROID_BRANCH=r2.0
+CIB_S_AUTO_ANDROID_URL=athenar:/tools/ci/build_script
+CIB_S_RELEASE_TOOL=letv@imgrepo-cnbj.devops.letv.com:/home/letv/ci_share/build_script/get_ci_scripts.sh
+CIB_S_TMP_FOLDER_FOR_CLEAN=/home/letv/jenkins_slave/workspace/CI_TMP_FOR_CLEAN_BIG_FILE
+CIB_S_TMP_FOLDER_FOR_RSYNC_DEBUG_FILE=/home/letv/jenkins_slave/workspace/CI_TMP_FOLDER_FOR_RSYNC_DEBUG_FILE
+EXECUTOR_NUMBER=1
+HOME=/home/letv
+HUDSON_HOME=/var/lib/jenkins
+HUDSON_SERVER_COOKIE=01676d1632886ea7
+HUDSON_URL=http://jenkins-test.devops.letv.com/
+JENKINS_HOME=/var/lib/jenkins
+JENKINS_SERVER_COOKIE=01676d1632886ea7
+JENKINS_URL=http://jenkins-test.devops.letv.com/
+JOB_BASE_NAME=juc-demo-6
+JOB_NAME=juc-demo-6
+JOB_URL=http://jenkins-test.devops.letv.com/job/juc-demo-6/
+LANG=en_US.UTF-8
+LANGUAGE=en_US:en
+LOGNAME=letv
+MAIL=/var/mail/letv
+NODE_LABELS=ssh-slave-1 ubuntu1404
+NODE_NAME=ssh-slave-1
+OLDPWD=/home/letv
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+PWD=/home/letv/jenkins_slave
+ROOT_BUILD_CAUSE=MANUALTRIGGER
+ROOT_BUILD_CAUSE_MANUALTRIGGER=true
+RUN_CHANGES_DISPLAY_URL=http://jenkins-test.devops.letv.com/job/juc-demo-6/2/display/redirect?page=changes
+RUN_DISPLAY_URL=http://jenkins-test.devops.letv.com/job/juc-demo-6/2/display/redirect
+SG_MYSQL_TABLE_INFO=-hci.le.com -ucm_mis --database android_build -pLe_ciadmin
+SHELL=/bin/bash
+SHLVL=1
+SSH_CLIENT=10.127.91.56 52908 22
+SSH_CONNECTION=10.127.91.56 52908 10.127.91.58 22
+USER=letv
+XDG_RUNTIME_DIR=/run/user/1002
+XDG_SESSION_ID=11
+_=/usr/bin/java

@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: danielbeck
+Build-Jdk: 1.8.0_121
+Extension-Name: uno-choice
+Specification-Title: This plug-in provides additional parameter types 
+ for jobs, that allow you to cascade changes and render images or othe
+ r HTML elements instead of the traditional parameter.
+Implementation-Title: uno-choice
+Implementation-Version: 2.0
+Group-Id: org.biouno
+Short-Name: uno-choice
+Long-Name: Active Choices Plug-in
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Active+Choices+Plugin
+Compatible-Since-Version: 2.0
+Plugin-Version: 2.0
+Hudson-Version: 2.7.3
+Jenkins-Version: 2.7.3
+Plugin-Dependencies: antisamy-markup-formatter:1.5,script-security:1.3
+ 1,scriptler:2.9;resolution:=optional
+Plugin-Developers: Bruno P. Kinoshita:kinow:,Ioannis K. Moutsatsos:imo
+ utsatsos:
+

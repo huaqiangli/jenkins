@@ -1,0 +1,50 @@
+Started by user [8mha:////4GV+RweLVc60jNuiJH+RLYoYLLHXQr/3JPSKsYbJxLpOAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYB/dLi1CL9nMyM0sTCTKBJAIE8yCbFAAAA[0mHuaqiang Li (李华强)
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MJxU6KVAXAsnQ/1AkC+7ZLImMiL+tyCt+FIXuOzIjJJAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZx/eT83ILSktQi/dxK3eSc/NIU3TyggwGRY6erzAAAAA==[0mmy-cloud-node (centos7) in workspace /root/data/jenkins_slave/workspace/juc-demo-1
+[juc-demo-1] $ /bin/sh -xe /tmp/jenkins1357129577852177615.sh
++ env
++ sort
+_=/bin/env
+BUILD_CAUSE=MANUALTRIGGER
+BUILD_CAUSE_MANUALTRIGGER=true
+BUILD_DISPLAY_NAME=#4
+BUILD_ID=4
+BUILD_NUMBER=4
+BUILD_TAG=jenkins-juc-demo-1-4
+BUILD_URL=http://106.2.3.220:8080/job/juc-demo-1/4/
+EXECUTOR_NUMBER=3
+HOME=/root
+HUDSON_COOKIE=7fc463f8-05ed-475d-8799-a7858ee25d90
+HUDSON_HOME=/var/jenkins_home
+HUDSON_SERVER_COOKIE=85059fa3dd0b75b8
+HUDSON_URL=http://106.2.3.220:8080/
+JENKINS_HOME=/var/jenkins_home
+JENKINS_SERVER_COOKIE=85059fa3dd0b75b8
+JENKINS_URL=http://106.2.3.220:8080/
+JOB_BASE_NAME=juc-demo-1
+JOB_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-1/display/redirect
+JOB_NAME=juc-demo-1
+JOB_URL=http://106.2.3.220:8080/job/juc-demo-1/
+LANG=en_US.UTF-8
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LOGNAME=root
+MAIL=/var/mail/root
+NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+NODE_LABELS=centos7 my-cloud-node
+NODE_NAME=my-cloud-node
+PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+PWD=/root/data/jenkins_slave/workspace/juc-demo-1
+ROOT_BUILD_CAUSE=MANUALTRIGGER
+ROOT_BUILD_CAUSE_MANUALTRIGGER=true
+RUN_CHANGES_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-1/4/display/redirect?page=changes
+RUN_DISPLAY_URL=http://106.2.3.220:8080/job/juc-demo-1/4/display/redirect
+SHELL=/bin/bash
+SHLVL=2
+SSH_CLIENT=172.19.0.2 42978 8022
+SSH_CONNECTION=172.19.0.2 42978 106.2.3.220 8022
+USER=root
+WORKSPACE=/root/data/jenkins_slave/workspace/juc-demo-1
+XDG_RUNTIME_DIR=/run/user/0
+XDG_SESSION_ID=6
+XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+Finished: SUCCESS

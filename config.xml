@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors>
+    <string>OldData</string>
+  </disabledAdministrativeMonitors>
+  <version>2.73.2</version>
+  <numExecutors>0</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy">
+    <denyAnonymousReadAccess>true</denyAnonymousReadAccess>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks>
+    <jdk>
+      <name></name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers/>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </jdk>
+  </jdks>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds>
+    <com.nirima.jenkins.plugins.docker.DockerCloud plugin="docker-plugin@1.0.4">
+      <name>my-cloud</name>
+      <templates>
+        <com.nirima.jenkins.plugins.docker.DockerTemplate>
+          <configVersion>2</configVersion>
+          <labelString>docker-ssh-slave</labelString>
+          <connector class="io.jenkins.docker.connector.DockerComputerSSHConnector">
+            <sshKeyStrategy class="io.jenkins.docker.connector.DockerComputerSSHConnector$ManuallyConfiguredSSHKey">
+              <credentialsId>8d286dca-0edd-4bef-b2c2-c6bc84111280</credentialsId>
+            </sshKeyStrategy>
+            <port>22</port>
+            <jvmOptions></jvmOptions>
+            <javaPath></javaPath>
+            <prefixStartSlaveCmd></prefixStartSlaveCmd>
+            <suffixStartSlaveCmd></suffixStartSlaveCmd>
+          </connector>
+          <remoteFsMapping></remoteFsMapping>
+          <remoteFs>/home/jenkins</remoteFs>
+          <instanceCap>2</instanceCap>
+          <mode>EXCLUSIVE</mode>
+          <retentionStrategy class="com.nirima.jenkins.plugins.docker.strategy.DockerOnceRetentionStrategy">
+            <idleMinutes>10</idleMinutes>
+            <timeout>10</timeout>
+          </retentionStrategy>
+          <numExecutors>1</numExecutors>
+          <dockerTemplateBase>
+            <image>harbor.greatops.net/juc/my-ssh-slave:v1</image>
+            <pullCredentialsId></pullCredentialsId>
+            <dockerCommand></dockerCommand>
+            <lxcConfString></lxcConfString>
+            <hostname></hostname>
+            <dnsHosts/>
+            <network></network>
+            <volumes/>
+            <volumesFrom2/>
+            <environment/>
+            <bindPorts></bindPorts>
+            <bindAllPorts>false</bindAllPorts>
+            <privileged>false</privileged>
+            <tty>false</tty>
+            <extraHosts/>
+          </dockerTemplateBase>
+          <removeVolumes>false</removeVolumes>
+          <pullStrategy>PULL_LATEST</pullStrategy>
+          <nodeProperties/>
+        </com.nirima.jenkins.plugins.docker.DockerTemplate>
+        <com.nirima.jenkins.plugins.docker.DockerTemplate>
+          <configVersion>2</configVersion>
+          <labelString>docker-jnlp-slave</labelString>
+          <connector class="io.jenkins.docker.connector.DockerComputerJNLPConnector">
+            <user>jenkins</user>
+            <jnlpLauncher>
+              <workDirSettings>
+                <disabled>false</disabled>
+                <internalDir>remoting</internalDir>
+                <failIfWorkDirIsMissing>false</failIfWorkDirIsMissing>
+              </workDirSettings>
+            </jnlpLauncher>
+          </connector>
+          <remoteFsMapping></remoteFsMapping>
+          <remoteFs>/home/jenkins</remoteFs>
+          <instanceCap>2</instanceCap>
+          <mode>NORMAL</mode>
+          <retentionStrategy class="com.nirima.jenkins.plugins.docker.strategy.DockerOnceRetentionStrategy">
+            <idleMinutes>10</idleMinutes>
+            <timeout>10</timeout>
+          </retentionStrategy>
+          <numExecutors>1</numExecutors>
+          <dockerTemplateBase>
+            <image>jenkinsci/jnlp-slave:latest</image>
+            <pullCredentialsId></pullCredentialsId>
+            <dockerCommand></dockerCommand>
+            <lxcConfString></lxcConfString>
+            <hostname></hostname>
+            <dnsHosts/>
+            <network></network>
+            <volumes/>
+            <volumesFrom2/>
+            <environment/>
+            <bindPorts></bindPorts>
+            <bindAllPorts>false</bindAllPorts>
+            <privileged>false</privileged>
+            <tty>false</tty>
+            <extraHosts/>
+          </dockerTemplateBase>
+          <removeVolumes>false</removeVolumes>
+          <pullStrategy>PULL_LATEST</pullStrategy>
+          <nodeProperties/>
+        </com.nirima.jenkins.plugins.docker.DockerTemplate>
+      </templates>
+      <dockerHost plugin="docker-commons@1.9">
+        <uri>tcp://106.2.3.220:2376</uri>
+      </dockerHost>
+      <connectTimeout>60</connectTimeout>
+      <readTimeout>60</readTimeout>
+      <version></version>
+      <dockerHostname></dockerHostname>
+      <containerCap>100</containerCap>
+      <exposeDockerHost>false</exposeDockerHost>
+    </com.nirima.jenkins.plugins.docker.DockerCloud>
+    <org.csanchez.jenkins.plugins.kubernetes.KubernetesCloud plugin="kubernetes@1.1">
+      <name>kubernetes test</name>
+      <defaultsProviderTemplate></defaultsProviderTemplate>
+      <templates>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>jnlp slave</name>
+          <namespace>default</namespace>
+          <privileged>false</privileged>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>2147483647</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>k8s-jnlp-slave</label>
+          <nodeSelector>target=jenkins</nodeSelector>
+          <nodeUsageMode>EXCLUSIVE</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp-slave</name>
+              <image>jenkinsci/jnlp-slave:latest</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>false</alwaysPullImage>
+              <workingDir>/home/jenkins</workingDir>
+              <command></command>
+              <args></args>
+              <ttyEnabled>true</ttyEnabled>
+              <resourceRequestCpu></resourceRequestCpu>
+              <resourceRequestMemory></resourceRequestMemory>
+              <resourceLimitCpu></resourceLimitCpu>
+              <resourceLimitMemory></resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars/>
+          <annotations/>
+          <imagePullSecrets/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+      </templates>
+      <serverUrl>https://10.56.1.86:6443</serverUrl>
+      <serverCertificate>-----BEGIN CERTIFICATE-----
+MIICyDCCAbCgAwIBAgIBADANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwprdWJl
+cm5ldGVzMB4XDTE3MTExNDE2MjczOVoXDTI3MTExMjE2MjczOVowFTETMBEGA1UE
+AxMKa3ViZXJuZXRlczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOou
+9J5wy/e50DtIB6BtZp+kf1YwKNvXcLFlvy4RnnJE0RiGTubBxKMFPJlG7ldWWW4i
+O0qj5XE1bsZu4VKKLDQm+d4F4wvPbGhCfWtwuRC+wx8LXb++3OM0HHjfYBxHpf1O
+shUnlxlhx6+WIIoZ+HYV/2S6Mz9gSDb/AEla4vjTqkhLJCkSRFG/Eni945rZP/iF
+X38RFGTjHFa0O1s2ymaC2DyyBjUA2L0jmJUlhLwYHwxb/QrBniMA50d+W6pP69HD
+WR4JZnSL9LG/gT/seHu8eUcfYfiBiNG8XZ86KkMfXz5qACXpQ6ioHHwOpXXcZ68f
+GTAawjDb4wu6oycC5B0CAwEAAaMjMCEwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB
+/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAIEBL/VkdtS2VkirTojbIP1K7DnL
+YZcHnrHKAFjmemWXUMYDJamLhZO/0AClUmHQKY54dXZbz0IEOae7dIFqGcG/hBAt
+ea2SR+R3sKsOi5Gw9nY+5HRiLpB783xx8YedxKd50dvtT/ASMz6NsqJS9OOimvbq
+NG/rKxsg9E6LlXSRVVZ4hROkqkeyiqUYW1UOpwIQ9mnf8pQRMiW5968t9sDbVpi9
+TJV8op8YRHMLktpn2l5mpXE1xd8Ftu6I3ocjxM1KC2Cv0eBeIlLFP4qAt4wP4862
+W4/cf+KZwORIriRN+Evrhx+TT18n8+a715al4lRGnFP8ibMuzrlJrOgs8j0=
+-----END CERTIFICATE-----</serverCertificate>
+      <skipTlsVerify>false</skipTlsVerify>
+      <jenkinsUrl>http://106.2.3.220:8080/</jenkinsUrl>
+      <credentialsId>8d286dca-0edd-4bef-b2c2-c6bc84111280</credentialsId>
+      <containerCap>10</containerCap>
+      <retentionTimeout>10</retentionTimeout>
+      <connectTimeout>0</connectTimeout>
+      <readTimeout>0</readTimeout>
+      <maxRequestsPerHost>32</maxRequestsPerHost>
+    </org.csanchez.jenkins.plugins.kubernetes.KubernetesCloud>
+  </clouds>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.7.1">
+      <owner class="hudson" reference="../../.."/>
+      <name>juc-demo13-view1</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
+        <firstJob>juc-demo-13-1</firstJob>
+        <firstJobLink>job/juc-demo-13-1/</firstJobLink>
+      </gridBuilder>
+      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
+      <buildViewTitle></buildViewTitle>
+      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
+      <cssUrl></cssUrl>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
+      <showPipelineParameters>false</showPipelineParameters>
+      <rowHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.SimpleRowHeader"/>
+      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
+      <columnHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.NullColumnHeader"/>
+      <buildCard class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.StandardBuildCard"/>
+      <startsWithParameters>false</startsWithParameters>
+      <refreshFrequency>3</refreshFrequency>
+      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
+    <se.diabol.jenkins.pipeline.DeliveryPipelineView plugin="delivery-pipeline-plugin@1.0.7">
+      <owner class="hudson" reference="../../.."/>
+      <name>juc-demo13-view2</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <componentSpecs>
+        <se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+          <name>demo13</name>
+          <firstJob>juc-demo-13-1</firstJob>
+          <lastJob></lastJob>
+          <showUpstream>true</showUpstream>
+        </se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+      </componentSpecs>
+      <noOfPipelines>3</noOfPipelines>
+      <showAggregatedPipeline>false</showAggregatedPipeline>
+      <noOfColumns>1</noOfColumns>
+      <sorting>none</sorting>
+      <showAvatars>false</showAvatars>
+      <updateInterval>2</updateInterval>
+      <showChanges>false</showChanges>
+      <allowManualTriggers>true</allowManualTriggers>
+      <showTotalBuildTime>false</showTotalBuildTime>
+      <allowRebuild>true</allowRebuild>
+      <allowPipelineStart>true</allowPipelineStart>
+      <showDescription>false</showDescription>
+      <showPromotions>false</showPromotions>
+      <showTestResults>false</showTestResults>
+      <showStaticAnalysisResults>false</showStaticAnalysisResults>
+      <linkRelative>false</linkRelative>
+      <pagingEnabled>false</pagingEnabled>
+      <showAggregatedChanges>false</showAggregatedChanges>
+      <aggregatedChangesGroupingPattern></aggregatedChangesGroupingPattern>
+      <theme>default</theme>
+      <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
+      <regexpFirstJobs/>
+      <linkToConsoleLog>true</linkToConsoleLog>
+      <description></description>
+    </se.diabol.jenkins.pipeline.DeliveryPipelineView>
+    <hudson.plugins.nested__view.NestedView plugin="nested-view@1.14">
+      <owner class="hudson" reference="../../.."/>
+      <name>juc-demo14-view-1</name>
+      <description>Nested view example</description>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <views>
+        <listView>
+          <owner class="hudson.plugins.nested_view.NestedView" reference="../../.."/>
+          <name>demo1-4</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+          <jobNames>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+            <string>juc-demo-1</string>
+            <string>juc-demo-2</string>
+            <string>juc-demo-3</string>
+            <string>juc-demo-4</string>
+          </jobNames>
+          <jobFilters/>
+          <columns>
+            <hudson.views.StatusColumn/>
+            <hudson.views.WeatherColumn/>
+            <hudson.views.JobColumn/>
+            <hudson.views.LastSuccessColumn/>
+            <hudson.views.LastFailureColumn/>
+            <hudson.views.LastDurationColumn/>
+            <hudson.views.BuildButtonColumn/>
+            <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.1"/>
+          </columns>
+          <recurse>false</recurse>
+        </listView>
+        <listView>
+          <owner class="hudson.plugins.nested_view.NestedView" reference="../../.."/>
+          <name>demo5-8</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+          <jobNames>
+            <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView/jobNames/comparator"/>
+            <string>juc-demo-5</string>
+            <string>juc-demo-6</string>
+            <string>juc-demo-7</string>
+            <string>juc-demo-8</string>
+          </jobNames>
+          <jobFilters/>
+          <columns>
+            <hudson.views.StatusColumn/>
+            <hudson.views.WeatherColumn/>
+            <hudson.views.JobColumn/>
+            <hudson.views.LastSuccessColumn/>
+            <hudson.views.LastFailureColumn/>
+            <hudson.views.LastDurationColumn/>
+            <hudson.views.BuildButtonColumn/>
+            <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.1"/>
+          </columns>
+          <recurse>false</recurse>
+        </listView>
+      </views>
+      <columns>
+        <columns>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.StatusColumn/>
+        </columns>
+      </columns>
+    </hudson.plugins.nested__view.NestedView>
+    <hudson.plugins.sectioned__view.SectionedView plugin="sectioned-view@1.24">
+      <owner class="hudson" reference="../../.."/>
+      <name>juc-demo14-view-2</name>
+      <description>sections view example</description>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <sections>
+        <hudson.plugins.sectioned__view.TextSection>
+          <jobNames>
+            <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../../../hudson.plugins.nested__view.NestedView/views/listView/jobNames/comparator"/>
+          </jobNames>
+          <jobFilters/>
+          <name>test section view </name>
+          <width>FULL</width>
+          <alignment>CENTER</alignment>
+          <text>add some text here</text>
+          <style>NONE</style>
+        </hudson.plugins.sectioned__view.TextSection>
+        <hudson.plugins.sectioned__view.ListViewSection>
+          <jobNames>
+            <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../../../hudson.plugins.nested__view.NestedView/views/listView/jobNames/comparator"/>
+            <string>juc-demo-13-1</string>
+            <string>juc-demo-13-2</string>
+            <string>juc-demo-13-3</string>
+            <string>juc-demo-13-4</string>
+          </jobNames>
+          <jobFilters/>
+          <name>demo13</name>
+          <width>FULL</width>
+          <alignment>CENTER</alignment>
+          <columns>
+            <hudson.views.StatusColumn/>
+            <hudson.views.WeatherColumn/>
+            <hudson.views.JobColumn/>
+            <hudson.views.LastSuccessColumn/>
+            <hudson.views.LastFailureColumn/>
+            <hudson.views.LastDurationColumn/>
+            <hudson.views.BuildButtonColumn/>
+          </columns>
+        </hudson.plugins.sectioned__view.ListViewSection>
+        <hudson.plugins.sectioned__view.ViewListingSection>
+          <jobNames>
+            <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../../../hudson.plugins.nested__view.NestedView/views/listView/jobNames/comparator"/>
+          </jobNames>
+          <jobFilters/>
+          <name>all view</name>
+          <width>FULL</width>
+          <alignment>CENTER</alignment>
+          <views>
+            <string>all</string>
+          </views>
+          <columns>1</columns>
+        </hudson.plugins.sectioned__view.ViewListingSection>
+      </sections>
+    </hudson.plugins.sectioned__view.SectionedView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>pipeline-demo</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.plugins.nested__view.NestedView/views/listView/jobNames/comparator"/>
+        <string>juc-demo-pipeline-1-simple</string>
+        <string>juc-demo-pipeline-2-normal</string>
+        <string>juc-demo-pipeline-3-input</string>
+        <string>juc-demo-pipeline-4-sonar</string>
+        <string>juc-demo-pipeline-5-gitlab</string>
+        <string>juc-demo-pipeline-6-freestyle</string>
+        <string>juc-demo-pipeline-7-harbor</string>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+        <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.1"/>
+      </columns>
+      <includeRegex>.*pipeline.*|juc-demo-3\d</includeRegex>
+      <recurse>false</recurse>
+    </listView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>50000</slaveAgentPort>
+  <disabledAgentProtocols>
+    <string>JNLP4-connect</string>
+  </disabledAgentProtocols>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>

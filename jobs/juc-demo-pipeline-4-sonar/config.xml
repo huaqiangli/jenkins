@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.15">
+  <actions>
+    <io.jenkins.blueocean.service.embedded.BlueOceanUrlAction plugin="blueocean-rest-impl@1.3.2">
+      <blueOceanUrlObject class="io.jenkins.blueocean.service.embedded.BlueOceanUrlObjectImpl">
+        <mappedUrl>blue/organizations/jenkins/juc-demo-pipeline-4</mappedUrl>
+        <modelObject class="flow-definition" reference="../../../.."/>
+      </blueOceanUrlObject>
+    </io.jenkins.blueocean.service.embedded.BlueOceanUrlAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty plugin="gitlab-plugin@1.5.1">
+      <gitLabConnection></gitLabConnection>
+    </com.dabsquared.gitlabjenkins.connection.GitLabConnectionProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@2.0.1">
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers/>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.41">
+    <script>pipeline {
+  agent any
+  stages {
+    stage(&apos;CheckOut&apos;) {
+      steps {
+        parallel(
+          &quot;CheckOut&quot;: {
+            git(url: &apos;git@106.2.4.82:root/myproj.git&apos;, poll: true, branch: &apos;master&apos;, changelog: true)
+            
+          },
+          &quot;PreCheck1&quot;: {
+            sh &apos;whoami&apos;
+            writeFile(file: &apos;file1&apos;, text: &apos;this is file-1&apos;, encoding: &apos;utf-8&apos;)
+            
+          },
+          &quot;PreCheck2&quot;: {
+            sh &apos;uname -a&apos;
+            
+          }
+        )
+      }
+    }
+    stage(&apos;Build&apos;) {
+      steps {
+        parallel(
+          &quot;Sonar-Check&quot;: {
+            withSonarQubeEnv(&apos;Sonar&apos;) {
+                sh &apos;echo &quot;Build PreCheck&quot;&apos;
+                sh &apos;echo sonarqube-scanner-maven&apos;
+                sh &apos;cd sonarqube-scanner-maven &amp;&amp; /opt/apache-maven-3.5.0/bin/mvn clean install sonar:sonar&apos;
+            }
+          },
+          &quot;Build&quot;: {
+            sh &apos;echo &quot;Building now&quot;&apos;
+            
+          }
+        )
+      }
+    }
+    stage(&apos;Test&apos;) {
+      steps {
+        parallel(
+          &quot;Test&quot;: {
+            sh &apos;echo &quot;Test&quot;&apos;
+            
+          },
+          &quot;Test1&quot;: {
+            sh &apos;echo &quot;Test 1&quot;&apos;
+            
+          },
+          &quot;Test2&quot;: {
+            sh &apos;echo &quot;Test 2&quot;&apos;
+            
+          },
+          &quot;JUnitResultArchiver&quot;: {
+            sh &apos;echo &quot;Junit Test&quot;&apos;
+            junit allowEmptyResults: true, testResults: &apos;sonarqube-scanner-maven/app-*/target/*-reports/*.xml&apos;
+          }
+        )
+      }
+    }
+    stage(&apos;Package&apos;) {
+      steps {
+        sh &apos;echo &quot;Packageing now&quot;&apos;
+      }
+    }
+    stage(&apos;Harbor&apos;) {
+      steps {
+        echo &apos;img is stroring&apos;
+      }
+    }
+    stage(&apos;Staging&apos;) {
+      steps {
+        echo &apos;staging now&apos;
+        script {
+                    env.RELEASE_SCOPE = input message: &apos;http://106.2.4.82:8080/userContent/releasenotes.html 蓝绿部署验证通过了么？&apos;, ok: &apos;Release!&apos;,
+                            parameters: [choice(name: &apos;RELEASE_SCOPE&apos;, choices: &apos;patch\nminor\nmajor&apos;, description: &apos;What is the release scope?&apos;)]
+                }
+        echo &quot;${env.RELEASE_SCOPE}&quot;
+        sh &quot;sed -i -e \&quot;s/RELEASE_TYPE/${env.RELEASE_SCOPE} release /\&quot; releasenotes.html &quot; 
+        sh &apos;sed -i -e &quot;s/RELEASE_VERSION/`date &quot;+%Y%M%m%d%H%M&quot;`/&quot; releasenotes.html &apos;
+        sh &apos;cp -f releasenotes.html ~/userContent/releasenotes.html&apos;
+
+      }
+      
+    }
+    stage(&apos;Release&apos;) {
+      steps {
+        echo &apos;release&apos;
+      }
+    }
+    stage(&apos;ReadyGo&apos;) {
+      steps {
+        echo &apos;ReadyToGo&apos;
+        script {
+                    env.RELEASE_SCOPE = input message: &apos;User input required&apos;, ok: &apos;Release!&apos;,
+                            parameters: [choice(name: &apos;RELEASE_SCOPE&apos;, choices: &apos;patch\nminor\nmajor&apos;, description: &apos;What is the release scope?&apos;)]
+                }
+        echo &quot;${env.RELEASE_SCOPE}&quot;
+
+      }
+    }
+  }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
